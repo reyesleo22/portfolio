@@ -74,3 +74,45 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Project cards */
+.projects {
+  display: grid;
+  gap: 2rem;
+}
+
+.project {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #003344;
+}
+
+.project p {
+  margin-bottom: 0.8rem;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #004466;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  background-color: #006699;
+}
