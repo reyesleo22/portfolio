@@ -53,12 +53,11 @@ p{margin:0 0 .8rem}
 .card{border:1px solid var(--line);border-radius:15px;background:var(--white);overflow:hidden}
 .card-body{padding:1.05rem}
 .card p{color:var(--muted);font-size:.92rem}
-.art{height:118px;display:grid;place-items:center;background:#d6eadc;overflow:hidden}
-.art span{font:bold 1.8rem ui-monospace,monospace;color:#275942;padding:.22rem .65rem;border:1px solid #27594255;border-radius:7px;background:#f8fff774;z-index:1}
-.art{position:relative;background-image:linear-gradient(#28584017 1px,transparent 1px),linear-gradient(90deg,#28584017 1px,transparent 1px);background-size:20px 20px}
-.art::before,.art::after{content:'';position:absolute;inset:24px 10% auto;height:64px;border:1px solid #38674e55;border-radius:80% 30% 75% 25%;transform:rotate(-11deg)}
-.art::after{transform:rotate(11deg);inset-inline:18%}
-.game .art{background-color:#e7dfef}.game .art span{color:#563465;border-color:#56346555}
+.art{aspect-ratio:12/5;overflow:hidden;background:#d6eadc}
+.art img{display:block;width:100%;height:100%;object-fit:cover}
+.game .art{background:#0b151b}
+.game .art img{object-fit:contain}
+.project-screenshot{display:block;width:100%;height:auto;border-radius:8px;margin-top:.7rem}
 .tags{display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:.85rem 0;list-style:none}
 .tags li{background:#edf2e9;padding:.16rem .42rem;border-radius:5px;font-size:.74rem;font-weight:670;color:#355747}
 summary{cursor:pointer;font-weight:750;color:var(--accent)}
@@ -79,6 +78,3 @@ iframe{width:100%;height:490px;border:0;margin-top:.75rem}
 @media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{align-items:start;flex-direction:column}.hero{gap:4%;padding:52px 0}}
 @media(max-width:620px){.wrap{width:calc(100% - 32px)}.bar{flex-wrap:wrap;padding:.65rem 0;gap:.4rem}.bar nav{order:3;width:100%;font-size:.88rem;gap:.8rem}.hero,.background,.resume-inner,.cards{grid-template-columns:1fr;gap:1.5rem}.hero{padding:40px 0}.work,.resume,.background{padding:38px 0}html{scroll-padding-top:7rem}.footer{flex-direction:column}iframe{height:380px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.art.photo{height:150px;background:#17231e}
-.art.photo::before,.art.photo::after{display:none}
-.art.photo img{width:100%;height:100%;object-fit:cover;object-position:center}
